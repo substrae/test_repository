@@ -9022,3 +9022,62 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 52, ../scss/app.scss */
+html {
+  font-size: 8pt;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 55, ../scss/app.scss */
+  html {
+    font-size: 10pt;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 56, ../scss/app.scss */
+  html {
+    font-size: 12pt;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 57, ../scss/app.scss */
+  html {
+    font-size: 14pt;
+  }
+}
+/* line 64, ../scss/app.scss */
+.wrapper-content {
+  background-image: url("../img/background_splash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+/* line 73, ../scss/app.scss */
+.wrapper-content .wrapper {
+  display: block;
+  padding: 0 15vw;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100vw;
+}
+/* line 82, ../scss/app.scss */
+.wrapper-content .wrapper h1, .wrapper-content .wrapper h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+/* line 87, ../scss/app.scss */
+.wrapper-content .wrapper h1 {
+  font-size: 3rem;
+}
+/* line 91, ../scss/app.scss */
+.wrapper-content .wrapper h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
