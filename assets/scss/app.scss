@@ -1,43 +1,14 @@
-@import "settings";
-@import "foundation";
+// =============================================================================
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+	// APP SCSS
+	// Property of Josh Beveridge
+
+// =============================================================================
+
+// Foundation Imports ==========================================================
+
+	@import "settings";
+	@import "foundation";
 
 // Palette =====================================================================
 
@@ -58,6 +29,31 @@
 
 	// Roboto
 	$roboto: 'Roboto', sans-serif;
+
+// Click Response ==============================================================
+
+	.click-response {
+		background: $black;
+		border-radius: 100px;
+		font-smoothing:subpixel-antialiased;
+		height: 5vw;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: scale(1) translateZ(1px);
+		transition: opacity 0.1s linear, transform 0.1s linear;
+		width: 5vw;
+		z-index: 500;
+
+		&.active {
+			font-smoothing:subpixel-antialiased;
+			opacity: 0.3;
+			transform: scale(2) translateZ(1px);
+			transition: opacity 0.1s linear, transform 0.1s linear;
+		}
+
+	}
 
 // Splash Page =================================================================
 
@@ -96,6 +92,11 @@
 		}
 
 	}
+
+// Imports =====================================================================
+
+	// Jer's Birthday
+	@import 'pages/jer.scss';
 
 // Media Queries ===============================================================
 
