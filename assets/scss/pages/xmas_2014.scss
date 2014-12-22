@@ -12,6 +12,91 @@
 
 // Origin Styles ===============================================================
 
+	.xmas {
+		background-color: $black;
+		transition: background-color 0.5s ease;
+
+		&.white {
+			background-color: $white;
+			transition: background-color 0.5s ease;
+		}
+
+		// Snowflake Styles
+		.flake {
+			height: 100vh;
+			opacity: 0;
+			position: absolute;
+				top: 50%;
+				left: 50%;
+			transform: translate(-50%,-50%);
+			transition: opacity 0.5s ease;
+			width: auto;
+
+			&.active {
+				opacity: 1;
+				transition: opacity 0.5s ease;
+			}
+
+		}
+
+		// Content Styles
+		.content {
+			display: block;
+			opacity: 0;
+			position: absolute;
+				top: 60%;
+				left: 50%;
+			transform: translate(-50%, -50%);
+			transition: all 0.3s ease;
+			width: 60vw;
+			z-index: 20;
+
+			p {
+				font-family: $roboto;
+				font-size: 2rem;
+			}
+
+			&.white {
+
+				p {
+					color: $white;
+				}
+
+			}
+
+			&.active {
+				opacity: 1;
+				position: absolute;
+					top: 50%;
+				transition: all 0.3s ease 0.3s;
+			}
+
+		}
+
+		// Button Style
+		.button-next {
+			cursor: pointer;
+			opacity: 0;
+			position: absolute;
+				right: 5vh;
+				bottom: 5vh;
+			transition: all 0.3s ease 0.3s;
+			width: 10vh;
+			z-index: 50;
+
+			&.active {
+				opacity: 1;
+				transition: all 0.3s ease 0.3s;
+			}
+
+			&.hidden {
+				cursor: default;
+			}
+
+		}
+
+	}
+
 // Media Queries ===============================================================
 
 	// Phone (Landscape)

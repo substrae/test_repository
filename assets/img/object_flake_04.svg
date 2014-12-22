@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1110px" height="1110px" viewBox="0 0 1110 1110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>snowflake_stroked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="snowflake_stroked" sketch:type="MSArtboardGroup" fill="#FFFFFF" opacity="0.496268657">
+            <path d="M724.866528,647.597275 L726.130598,645.423917 L552.779229,744.01473 L555.249553,744.013857 L381.932884,645.60483 L383.19849,647.779233 L383.230798,447.514985 L381.96905,449.686386 L555.253417,350.888463 L552.775982,350.887932 L726.108807,449.81192 L724.84799,447.640879 L724.866528,647.597275 Z M729.847855,446.188867 L728.587172,445.469374 L555.254347,346.545386 L554.015781,345.838515 L552.776913,346.544855 L379.492546,445.342778 L378.231032,446.062029 L378.230798,447.514179 L378.19849,647.778426 L378.198255,649.234085 L379.464095,649.952828 L552.780765,748.361855 L554.016175,749.063319 L555.25109,748.360982 L728.602459,649.770169 L729.866663,649.051173 L729.866528,647.596812 L729.84799,447.640415 L729.847855,446.188867 Z" id="hex_01" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

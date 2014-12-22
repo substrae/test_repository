@@ -101,45 +101,46 @@ html {
 /* line 88, ../../scss/pages/jer.scss */
 .jer .content.active {
   opacity: 1;
+  position: absolute;
   top: 50%;
   -webkit-transition: all 0.3s ease 0.3s;
           transition: all 0.3s ease 0.3s;
 }
-/* line 96, ../../scss/pages/jer.scss */
+/* line 97, ../../scss/pages/jer.scss */
 .jer .content.white p {
   color: white;
 }
-/* line 104, ../../scss/pages/jer.scss */
+/* line 105, ../../scss/pages/jer.scss */
 .jer .content.c09.active {
   -webkit-transition: all 0.3s ease 0.6s;
           transition: all 0.3s ease 0.6s;
 }
-/* line 112, ../../scss/pages/jer.scss */
+/* line 113, ../../scss/pages/jer.scss */
 .jer .content.c10.active {
   -webkit-transition: all 0.3s ease 0.6s;
           transition: all 0.3s ease 0.6s;
 }
-/* line 120, ../../scss/pages/jer.scss */
+/* line 121, ../../scss/pages/jer.scss */
 .jer .content.c14.active {
   -webkit-transition: all 0.3s ease 0.6s;
           transition: all 0.3s ease 0.6s;
 }
-/* line 128, ../../scss/pages/jer.scss */
+/* line 129, ../../scss/pages/jer.scss */
 .jer .content.c15.active {
   -webkit-transition: all 0.3s ease 0.6s;
           transition: all 0.3s ease 0.6s;
 }
-/* line 136, ../../scss/pages/jer.scss */
+/* line 137, ../../scss/pages/jer.scss */
 .jer .content.c18.active {
   -webkit-transition: all 0.3s ease 0.6s;
           transition: all 0.3s ease 0.6s;
 }
-/* line 144, ../../scss/pages/jer.scss */
+/* line 145, ../../scss/pages/jer.scss */
 .jer .content.c19.active {
   -webkit-transition: all 0.3s ease 0.6s;
           transition: all 0.3s ease 0.6s;
 }
-/* line 153, ../../scss/pages/jer.scss */
+/* line 154, ../../scss/pages/jer.scss */
 .jer .button-next {
   cursor: pointer;
   opacity: 0;
@@ -148,16 +149,16 @@ html {
   bottom: 5vh;
   -webkit-transition: all 0.3s ease 0.3s;
           transition: all 0.3s ease 0.3s;
-  width: 10vw;
+  width: 10vh;
   z-index: 50;
 }
-/* line 163, ../../scss/pages/jer.scss */
+/* line 164, ../../scss/pages/jer.scss */
 .jer .button-next.active {
   opacity: 1;
   -webkit-transition: all 0.3s ease 0.3s;
           transition: all 0.3s ease 0.3s;
 }
-/* line 168, ../../scss/pages/jer.scss */
+/* line 169, ../../scss/pages/jer.scss */
 .jer .button-next.hidden {
   cursor: default;
 }

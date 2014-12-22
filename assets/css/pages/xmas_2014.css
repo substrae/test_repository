@@ -21,3 +21,89 @@ html {
     font-size: 14pt;
   }
 }
+/* line 15, ../../scss/pages/xmas_2014.scss */
+.xmas {
+  background-color: #1e1e1e;
+  -webkit-transition: background-color 0.5s ease;
+          transition: background-color 0.5s ease;
+}
+/* line 19, ../../scss/pages/xmas_2014.scss */
+.xmas.white {
+  background-color: white;
+  -webkit-transition: background-color 0.5s ease;
+          transition: background-color 0.5s ease;
+}
+/* line 25, ../../scss/pages/xmas_2014.scss */
+.xmas .flake {
+  height: 100vh;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+  width: auto;
+}
+/* line 35, ../../scss/pages/xmas_2014.scss */
+.xmas .flake.active {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+}
+/* line 43, ../../scss/pages/xmas_2014.scss */
+.xmas .content {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  width: 60vw;
+  z-index: 20;
+}
+/* line 54, ../../scss/pages/xmas_2014.scss */
+.xmas .content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+/* line 61, ../../scss/pages/xmas_2014.scss */
+.xmas .content.white p {
+  color: white;
+}
+/* line 67, ../../scss/pages/xmas_2014.scss */
+.xmas .content.active {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s ease 0.3s;
+          transition: all 0.3s ease 0.3s;
+}
+/* line 77, ../../scss/pages/xmas_2014.scss */
+.xmas .button-next {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  right: 5vh;
+  bottom: 5vh;
+  -webkit-transition: all 0.3s ease 0.3s;
+          transition: all 0.3s ease 0.3s;
+  width: 10vh;
+  z-index: 50;
+}
+/* line 87, ../../scss/pages/xmas_2014.scss */
+.xmas .button-next.active {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease 0.3s;
+          transition: all 0.3s ease 0.3s;
+}
+/* line 92, ../../scss/pages/xmas_2014.scss */
+.xmas .button-next.hidden {
+  cursor: default;
+}
