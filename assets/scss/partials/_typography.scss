@@ -1,0 +1,19 @@
+// =============================================================================
+
+	// TYPOGRAPHY SCSS
+	// Property of Josh Beveridge
+
+// =============================================================================
+
+// Typography ==================================================================
+
+	// Body Font
+	html {font-size: 8pt};
+	@media screen and (min-width:541px) {}
+	@media screen and (min-width:641px) {}
+	@media screen and (min-width:801px) {html {font-size: 10pt};}
+	@media screen and (min-width:1025px) {html {font-size: 12pt};}
+	@media screen and (min-width:1281px) {html {font-size: 14pt};}
+
+	// Roboto
+	$roboto: 'Roboto', sans-serif;

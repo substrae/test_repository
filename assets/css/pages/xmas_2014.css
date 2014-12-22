@@ -1,0 +1,23 @@
+/* line 11, ../../scss/partials/_typography.scss */
+html {
+  font-size: 8pt;
+}
+
+@media screen and (min-width: 801px) {
+  /* line 14, ../../scss/partials/_typography.scss */
+  html {
+    font-size: 10pt;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 15, ../../scss/partials/_typography.scss */
+  html {
+    font-size: 12pt;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 16, ../../scss/partials/_typography.scss */
+  html {
+    font-size: 14pt;
+  }
+}

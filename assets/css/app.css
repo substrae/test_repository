@@ -9022,30 +9022,30 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 23, ../scss/app.scss */
+/* line 11, ../scss/partials/_typography.scss */
 html {
   font-size: 8pt;
 }
 
-@media screen and (min-width: 769px) {
-  /* line 26, ../scss/app.scss */
+@media screen and (min-width: 801px) {
+  /* line 14, ../scss/partials/_typography.scss */
   html {
     font-size: 10pt;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 27, ../scss/app.scss */
+  /* line 15, ../scss/partials/_typography.scss */
   html {
     font-size: 12pt;
   }
 }
 @media screen and (min-width: 1281px) {
-  /* line 28, ../scss/app.scss */
+  /* line 16, ../scss/partials/_typography.scss */
   html {
     font-size: 14pt;
   }
 }
-/* line 35, ../scss/app.scss */
+/* line 20, ../scss/app.scss */
 .click-response {
   background: #1e1e1e;
   border-radius: 100px;
@@ -9062,7 +9062,7 @@ html {
   width: 5vw;
   z-index: 500;
 }
-/* line 49, ../scss/app.scss */
+/* line 34, ../scss/app.scss */
 .click-response.active {
   font-smoothing: subpixel-antialiased;
   opacity: 0.3;
@@ -9072,7 +9072,7 @@ html {
           transition: opacity 0.1s linear, transform 0.1s linear;
 }
 
-/* line 60, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .wrapper-content {
   background-image: url("../img/background_splash.jpg");
   background-position: center;
@@ -9082,7 +9082,7 @@ html {
   position: relative;
   width: 100vw;
 }
-/* line 69, ../scss/app.scss */
+/* line 54, ../scss/app.scss */
 .wrapper-content .wrapper {
   display: block;
   padding: 0 15vw;
@@ -9094,158 +9094,17 @@ html {
           transform: translateY(-50%);
   width: 100vw;
 }
-/* line 78, ../scss/app.scss */
+/* line 63, ../scss/app.scss */
 .wrapper-content .wrapper h1, .wrapper-content .wrapper h2 {
   color: white;
   font-family: "Roboto", sans-serif;
 }
-/* line 83, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .wrapper-content .wrapper h1 {
   font-size: 3rem;
 }
-/* line 87, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .wrapper-content .wrapper h2 {
   font-size: 2rem;
   font-weight: 200;
-}
-
-/* line 10, ../scss/pages/_jer.scss */
-.jer {
-  height: 100vh;
-  overflow: hidden;
-  width: 100vw;
-}
-/* line 16, ../scss/pages/_jer.scss */
-.jer .pane-left, .jer .pane-right {
-  background: white;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  width: 50vw;
-  z-index: 10;
-}
-/* line 25, ../scss/pages/_jer.scss */
-.jer .pane-left {
-  left: -50vw;
-  -webkit-transition: left 0.3s ease 0.3s;
-          transition: left 0.3s ease 0.3s;
-}
-/* line 29, ../scss/pages/_jer.scss */
-.jer .pane-left.active {
-  left: 0vw;
-  -webkit-transition: left 0.3s ease;
-          transition: left 0.3s ease;
-}
-/* line 36, ../scss/pages/_jer.scss */
-.jer .pane-right {
-  right: -50vw;
-  -webkit-transition: right 0.3s ease 0.3s;
-          transition: right 0.3s ease 0.3s;
-}
-/* line 40, ../scss/pages/_jer.scss */
-.jer .pane-right.active {
-  right: 0vw;
-  -webkit-transition: right 0.3s ease;
-          transition: right 0.3s ease;
-}
-/* line 48, ../scss/pages/_jer.scss */
-.jer .wallpaper {
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: opacity 0s ease 0.5s;
-          transition: opacity 0s ease 0.5s;
-  width: 100vw;
-  z-index: 0;
-}
-/* line 60, ../scss/pages/_jer.scss */
-.jer .wallpaper.active {
-  opacity: 1;
-}
-/* line 67, ../scss/pages/_jer.scss */
-.jer .content {
-  display: block;
-  opacity: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-  width: 60vw;
-  z-index: 20;
-}
-/* line 78, ../scss/pages/_jer.scss */
-.jer .content p {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-}
-/* line 83, ../scss/pages/_jer.scss */
-.jer .content.active {
-  opacity: 1;
-  top: 50%;
-  -webkit-transition: all 0.3s ease 0.3s;
-          transition: all 0.3s ease 0.3s;
-}
-/* line 91, ../scss/pages/_jer.scss */
-.jer .content.white p {
-  color: white;
-}
-/* line 99, ../scss/pages/_jer.scss */
-.jer .content.c09.active {
-  -webkit-transition: all 0.3s ease 0.6s;
-          transition: all 0.3s ease 0.6s;
-}
-/* line 107, ../scss/pages/_jer.scss */
-.jer .content.c10.active {
-  -webkit-transition: all 0.3s ease 0.6s;
-          transition: all 0.3s ease 0.6s;
-}
-/* line 115, ../scss/pages/_jer.scss */
-.jer .content.c14.active {
-  -webkit-transition: all 0.3s ease 0.6s;
-          transition: all 0.3s ease 0.6s;
-}
-/* line 123, ../scss/pages/_jer.scss */
-.jer .content.c15.active {
-  -webkit-transition: all 0.3s ease 0.6s;
-          transition: all 0.3s ease 0.6s;
-}
-/* line 131, ../scss/pages/_jer.scss */
-.jer .content.c18.active {
-  -webkit-transition: all 0.3s ease 0.6s;
-          transition: all 0.3s ease 0.6s;
-}
-/* line 139, ../scss/pages/_jer.scss */
-.jer .content.c19.active {
-  -webkit-transition: all 0.3s ease 0.6s;
-          transition: all 0.3s ease 0.6s;
-}
-/* line 148, ../scss/pages/_jer.scss */
-.jer .button-next {
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
-  right: 5vh;
-  bottom: 5vh;
-  -webkit-transition: all 0.3s ease 0.3s;
-          transition: all 0.3s ease 0.3s;
-  width: 10vw;
-  z-index: 50;
-}
-/* line 158, ../scss/pages/_jer.scss */
-.jer .button-next.active {
-  opacity: 1;
-  -webkit-transition: all 0.3s ease 0.3s;
-          transition: all 0.3s ease 0.3s;
-}
-/* line 163, ../scss/pages/_jer.scss */
-.jer .button-next.hidden {
-  cursor: default;
 }

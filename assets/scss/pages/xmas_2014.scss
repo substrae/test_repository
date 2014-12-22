@@ -1,0 +1,30 @@
+// =============================================================================
+
+	// XMAS 2014 SCSS
+	// Property of Josh Beveridge
+
+// =============================================================================
+
+// Custom Imports ==============================================================
+
+	@import 'partials/palette';
+	@import 'partials/typography';
+
+// Origin Styles ===============================================================
+
+// Media Queries ===============================================================
+
+	// Phone (Landscape)
+	@media screen and (min-width:541px) {}
+
+	// Tablet (Portrait)
+	@media screen and (min-width:641px) {}
+
+	// Tablet (Landscape)
+	@media screen and (min-width:801px) {}
+
+	// Desktop
+	@media screen and (min-width:1025px) {}
+
+	// Desktop XL
+	@media screen and (min-width:1281px) {}

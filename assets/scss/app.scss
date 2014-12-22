@@ -10,25 +10,10 @@
 	@import "settings";
 	@import "foundation";
 
-// Palette =====================================================================
+// Custom Imports ==============================================================
 
-	// Base Palette
-	$white: rgba(255,255,255,1);
-	$grey: rgba(225,225,225,1);
-	$black: rgba(30,30,30,1);
-
-// Typography ==================================================================
-
-	// Body Font
-	html {font-size: 8pt};
-	@media screen and (min-width:541px) {}
-	@media screen and (min-width:641px) {}
-	@media screen and (min-width:769px) {html {font-size: 10pt};}
-	@media screen and (min-width:1025px) {html {font-size: 12pt};}
-	@media screen and (min-width:1281px) {html {font-size: 14pt};}
-
-	// Roboto
-	$roboto: 'Roboto', sans-serif;
+	@import 'partials/palette';
+	@import 'partials/typography';
 
 // Click Response ==============================================================
 
@@ -93,11 +78,6 @@
 
 	}
 
-// Imports =====================================================================
-
-	// Jer's Birthday
-	@import 'pages/jer.scss';
-
 // Media Queries ===============================================================
 
 	// Phone (Landscape)
@@ -107,7 +87,7 @@
 	@media screen and (min-width:641px) {}
 
 	// Tablet (Landscape)
-	@media screen and (min-width:769px) {}
+	@media screen and (min-width:801px) {}
 
 	// Desktop
 	@media screen and (min-width:1025px) {}
