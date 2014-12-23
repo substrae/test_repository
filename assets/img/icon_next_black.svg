@@ -1,13 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard 10</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-10" sketch:type="MSArtboardGroup" fill="#1E1E1E">
-            <path d="M137.218923,263.578539 L147.397902,278.760265 L157.854001,263.768052 L281.963071,85.817397 C285.912249,80.1549666 284.523385,72.3632178 278.860954,68.4140389 C273.198524,64.46486 265.406775,65.8537248 261.457596,71.5161552 L147.854666,234.549234 L38.6720068,71.7056689 C34.8274935,65.9716608 27.0625676,64.4399226 21.3285595,68.2844359 C15.5945514,72.1289493 14.0628132,79.8938751 17.9073265,85.6278833 L137.218923,263.578539 Z" id="Path-164" sketch:type="MSShapeGroup"></path>
-            <path d="M238.5,120 C238.5,70.5705149 198.429485,30.5 149,30.5 C99.5705149,30.5 59.5,70.5705149 59.5,120 C59.5,169.429485 99.5705149,209.5 149,209.5 C198.429485,209.5 238.5,169.429485 238.5,120 Z M84.5,120 C84.5,84.3776336 113.377634,55.5 149,55.5 C184.622366,55.5 213.5,84.3776336 213.5,120 C213.5,155.622366 184.622366,184.5 149,184.5 C113.377634,184.5 84.5,155.622366 84.5,120 Z" id="Oval-2" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<g id="icon_x5F_geo_1_">
+</g>
+<g id="icon_x5F_next">
+	<path fill="#1E1E1E" d="M75,97.3c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S88.8,97.3,75,97.3z M75,52.3c-11,0-20,9-20,20
+		s9,20,20,20s20-9,20-20S86,52.3,75,52.3z"/>
+	<path fill="#1E1E1E" d="M75,121.2L32.9,51.1c-0.7-1.2-0.3-2.7,0.9-3.4c1.2-0.7,2.7-0.3,3.4,0.9L75,111.5l37.9-62.9
+		c0.7-1.2,2.2-1.6,3.4-0.9c1.2,0.7,1.6,2.2,0.9,3.4L75,121.2z"/>
+	<g id="guides_1_" display="none">
+	</g>
+</g>
+<g id="flake">
+	<g id="guides" display="none">
+	</g>
+	<g id="icon_x5F_geo">
+	</g>
+	<g id="half_hexes">
+	</g>
+	<g id="triangles">
+	</g>
+	<g id="picks">
+	</g>
+</g>
 </svg>

@@ -14,27 +14,54 @@
 
 	.xmas {
 		background-color: $black;
+		height: 100vh;
+		overflow: hidden;
 		transition: background-color 0.5s ease;
+		width: 100vw;
 
 		&.white {
 			background-color: $white;
-			transition: background-color 0.5s ease;
+			transition: background-color 0.5s ease 7.5s;
+		}
+
+		// Click Response Variability
+		.click-response {
+
+			&.white {
+				background: $white;
+			}
+
 		}
 
 		// Snowflake Styles
-		.flake {
-			height: 100vh;
-			opacity: 0;
+		.wrapper.snowflake {
+			height: 80vh;
 			position: absolute;
 				top: 50%;
 				left: 50%;
 			transform: translate(-50%,-50%);
+			width: 80vh;
+		}
+
+		.flake {
+			height: 100%;
+			opacity: 0;
+			position: absolute;
+				top: 0;
+				left: 0;
 			transition: opacity 0.5s ease;
-			width: auto;
 
 			&.active {
-				opacity: 1;
-				transition: opacity 0.5s ease;
+				-webkit-backface-visibility: hidden;
+				transform-origin: 50% 50%;
+
+				&.f01 {animation: flakeA 5s linear 0.5s; animation-fill-mode: forwards;}
+				&.f02 {animation: flakeB 5s linear 0.5s; animation-fill-mode: forwards;}
+				&.f03 {animation: flakeC 5s linear 0.5s; animation-fill-mode: forwards;}
+				&.f04 {animation: flakeD 5s linear 0.5s; animation-fill-mode: forwards;}
+				&.f05 {animation: flakeE 5s linear 0.5s; animation-fill-mode: forwards;}
+				&.f06 {animation: flakeF 5s linear 0.5s; animation-fill-mode: forwards;}
+
 			}
 
 		}
@@ -54,6 +81,12 @@
 			p {
 				font-family: $roboto;
 				font-size: 2rem;
+				font-weight: 200;
+
+				>span {
+					color: $xmas-red;
+				}
+
 			}
 
 			&.white {
@@ -69,6 +102,11 @@
 				position: absolute;
 					top: 50%;
 				transition: all 0.3s ease 0.3s;
+
+				&.c03 {
+					transition: all 0.3s ease 8.5s;
+				}
+
 			}
 
 		}
@@ -81,7 +119,7 @@
 				right: 5vh;
 				bottom: 5vh;
 			transition: all 0.3s ease 0.3s;
-			width: 10vh;
+			width: 15vh;
 			z-index: 50;
 
 			&.active {
@@ -95,6 +133,57 @@
 
 		}
 
+	}
+
+// Keyframes ===================================================================
+
+	@keyframes flakeA {
+		0% {opacity: 0;}
+		1% {opacity: 0;}
+		4% {opacity: 1;}
+		6% {opacity: 0;}
+		8% {opacity: 1;}
+		10% {opacity: 0;}
+		20% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+
+	@keyframes flakeB{
+		20% {opacity: 0;}
+		25% {opacity: 0;}
+		30% {opacity: 1;}
+		75% {transform: rotate(0deg);}
+		90% {transform: rotate(180deg);}
+		100% {opacity: 1; transform: rotate(180deg);}
+	}
+
+	@keyframes flakeC {
+		30% {opacity: 0;}
+		35% {opacity: 0;}
+		40% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+
+	@keyframes flakeD {
+		40% {opacity: 0;}
+		45% {opacity: 0;}
+		50% {opacity: 1;}
+		85% {transform: rotate(0deg);}
+		100% {opacity: 1; transform: rotate(-180deg);}
+	}
+
+	@keyframes flakeE {
+		50% {opacity: 0;}
+		55% {opacity: 0;}
+		60% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+
+	@keyframes flakeF {
+		60% {opacity: 0;}
+		65% {opacity: 0;}
+		70% {opacity: 1;}
+		100% {opacity: 1;}
 	}
 
 // Media Queries ===============================================================

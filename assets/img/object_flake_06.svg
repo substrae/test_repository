@@ -1,25 +1,80 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1110px" height="1110px" viewBox="0 0 1110 1110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>snowflake_stroked</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="snowflake_stroked" sketch:type="MSArtboardGroup" fill="#FFFFFF">
-            <g id="triangles" sketch:type="MSLayerGroup" transform="translate(34.000000, 83.000000)">
-                <g id="Triangle-6-+-Triangle-7" transform="translate(0.000000, 435.000000)" sketch:type="MSShapeGroup">
-                    <path d="M855.5,60.9950148 L855.530469,5.9846782 L1011.56387,33.4934574 L855.5,60.9950148 Z M1040.39902,33.5 L1026.43406,31.0379695 L853.434057,0.537969502 L850.5,0.0206934863 L850.5,3 L850.5,64 L850.5,66.9793065 L853.434057,66.4620305 L1026.43406,35.9620305 L1040.39902,33.5 Z" id="Triangle-6"></path>
-                    <path d="M187.565943,66.4620305 L190.5,66.9793065 L190.5,64 L190.5,3 L190.5,0.0206934863 L187.565943,0.537969502 L14.5659426,31.0379695 L0.600982726,33.5 L14.5659426,35.9620305 L187.565943,66.4620305 Z M185.500193,5.98120206 L185.503753,61.0213551 L29.4492906,33.5088632 L185.500193,5.98120206 Z" id="Triangle-7"></path>
-                </g>
-                <g id="Triangle-6-+-Triangle-9" transform="translate(520.500000, 468.500000) rotate(-60.000000) translate(-520.500000, -468.500000) translate(0.000000, 435.000000)" sketch:type="MSShapeGroup">
-                    <path d="M855.500463,61.0113024 L855.50899,5.98089146 L1011.63924,33.5067442 L855.500463,61.0113024 Z M1040.39902,33.5 L1026.43406,31.0379695 L853.434057,0.537969502 L850.5,0.0206934863 L850.5,3 L850.5,64 L850.5,66.9793065 L853.434057,66.4620305 L1026.43406,35.9620305 L1040.39902,33.5 Z" id="Triangle-6"></path>
-                    <path d="M187.565943,66.4620305 L190.5,66.9793065 L190.5,64 L190.5,3 L190.5,0.0206934863 L187.565943,0.537969502 L14.5659426,31.0379695 L0.600982726,33.5 L14.5659426,35.9620305 L187.565943,66.4620305 Z M185.5,5.98329304 L185.548803,61.0292975 L29.4494819,33.5088969 L185.5,5.98329304 Z" id="Triangle-7"></path>
-                </g>
-                <g id="Triangle-6-+-Triangle-8" transform="translate(520.500000, 468.500000) rotate(-300.000000) translate(-520.500000, -468.500000) translate(0.000000, 435.000000)" sketch:type="MSShapeGroup">
-                    <path d="M855.499922,60.9823739 L855.498492,5.97904063 L1011.60849,33.5013241 L855.499922,60.9823739 Z M1040.39902,33.5 L1026.43406,31.0379695 L853.434057,0.537969502 L850.5,0.0206934863 L850.5,3 L850.5,64 L850.5,66.9793065 L853.434057,66.4620305 L1026.43406,35.9620305 L1040.39902,33.5 Z" id="Triangle-6"></path>
-                    <path d="M187.565943,66.4620305 L190.5,66.9793065 L190.5,64 L190.5,3 L190.5,0.0206934863 L187.565943,0.537969502 L14.5659426,31.0379695 L0.600982726,33.5 L14.5659426,35.9620305 L187.565943,66.4620305 Z M185.499724,5.95579927 L185.494583,61.0197385 L29.407079,33.5014213 L185.499724,5.95579927 Z" id="Triangle-7"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 657 657" enable-background="new 0 0 657 657" xml:space="preserve">
+<g id="icon_x5F_geo_1_">
+</g>
+<g id="icon_x5F_next">
+	<g id="guides_1_" display="none">
+	</g>
+</g>
+<g id="flake">
+	<g id="guides" display="none">
+	</g>
+	<g id="icon_x5F_geo">
+	</g>
+	<g id="half_hexes">
+	</g>
+	<g id="triangles">
+	</g>
+	<g id="picks">
+	</g>
+</g>
+<g id="flake_x5F_merged">
+	<rect x="0" y="0" display="none" fill="#1E1E1E" width="657" height="657"/>
+	<g id="icon_x5F_geo_2_" display="none">
+		<path display="inline" fill="#FFFFFF" d="M329.3,398.3l-59.9-34.6v-69.2l59.9-34.6l59.9,34.6v69.2L329.3,398.3z M274.4,360.8
+			l54.9,31.7l54.9-31.7v-63.4l-54.9-31.7l-54.9,31.7V360.8z"/>
+		<path display="inline" fill="#FFFFFF" d="M271.9,364.7c-0.9,0-1.7-0.4-2.2-1.2c-0.7-1.2-0.3-2.7,0.9-3.4l31.5-18.2v-27.1
+			c0-1.4,1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5v30l-34,19.6C272.7,364.6,272.3,364.7,271.9,364.7z"/>
+		<path display="inline" fill="#FFFFFF" d="M329.3,360.1c-0.9,0-1.7-0.4-2.2-1.2c-0.7-1.2-0.3-2.7,0.9-3.4l23.5-13.6v-25.7
+			l-24.7-14.3v-39.2c0-1.4,1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5v36.3l24.7,14.3v31.5l-26,15C330.2,360,329.8,360.1,329.3,360.1z"/>
+		
+			<rect x="351.5" y="350.3" transform="matrix(0.866 0.5 -0.5 0.866 226.0322 -137.9499)" display="inline" fill="#FFFFFF" width="37.8" height="5"/>
+	</g>
+	<path id="hexagon_2_" display="none" fill="#FFFFFF" d="M329.3,472.2l-123.9-71.6V257.5l123.9-71.6l123.9,71.6v143.1L329.3,472.2z
+		 M210.4,397.7l118.9,68.7l118.9-68.7V260.4l-118.9-68.7l-118.9,68.7V397.7z"/>
+	<g id="picks_1_" display="none">
+		<rect x="326.8" y="41" display="inline" fill="#FFFFFF" width="5" height="110.9"/>
+		<polygon display="inline" fill="#FFFFFF" points="329.3,44.9 296.3,5.7 300.1,2.5 329.3,37.2 358.6,2.5 362.4,5.7 		"/>
+		<rect x="326.8" y="506" display="inline" fill="#FFFFFF" width="5" height="110.9"/>
+		<polygon display="inline" fill="#FFFFFF" points="358.6,655.5 329.3,620.8 300.1,655.5 296.3,652.2 329.3,613 362.4,652.2 		"/>
+		
+			<rect x="72.6" y="210.2" transform="matrix(0.866 0.5 -0.5 0.866 123.5004 -35.4924)" display="inline" fill="#FFFFFF" width="110.9" height="5"/>
+		<polygon display="inline" fill="#FFFFFF" points="32.8,196 32,191.1 76.6,183.1 61.2,140.4 65.9,138.7 83.3,186.9 		"/>
+		
+			<rect x="475.3" y="442.7" transform="matrix(0.866 0.5 -0.5 0.866 293.7048 -205.6967)" display="inline" fill="#FFFFFF" width="110.9" height="5"/>
+		<polygon display="inline" fill="#FFFFFF" points="592.8,519.2 575.3,471 625.8,461.9 626.7,466.9 582,474.9 597.5,517.5 		"/>
+		
+			<rect x="125.5" y="389.8" transform="matrix(0.5 0.866 -0.866 0.5 449.5523 111.7701)" display="inline" fill="#FFFFFF" width="5" height="110.9"/>
+		<polygon display="inline" fill="#FFFFFF" points="65.9,519.2 61.2,517.5 76.6,474.9 32,466.9 32.8,461.9 83.3,471 		"/>
+		
+			<rect x="528.2" y="157.3" transform="matrix(0.5 0.866 -0.866 0.5 449.5512 -353.2339)" display="inline" fill="#FFFFFF" width="5" height="110.9"/>
+		<polygon display="inline" fill="#FFFFFF" points="625.8,196 575.3,186.9 592.8,138.7 597.5,140.4 582,183.1 626.7,191.1 		"/>
+	</g>
+	<path id="hexagon_1_" display="none" opacity="0.3" fill="#FFFFFF" d="M329.3,435.2l-91.9-53.1V276l91.9-53.1l91.9,53.1v106.2
+		L329.3,435.2z M242.4,379.3l86.9,50.2l86.9-50.2V278.9l-86.9-50.2l-86.9,50.2V379.3z"/>
+	<g id="half_x5F_hexes" display="none">
+		<polygon display="inline" opacity="0.3" fill="#FFFFFF" points="571.1,434.4 480.4,382.1 480.4,275.9 571.1,223.5 573.6,227.8 
+			485.4,278.8 485.4,379.2 573.6,430.1 		"/>
+		<polygon display="inline" opacity="0.3" fill="#FFFFFF" points="87.7,434.4 85.2,430.1 173.4,379.1 173.4,278.7 85.2,227.8 
+			87.7,223.5 178.4,275.9 178.4,382 		"/>
+		<polygon display="inline" opacity="0.3" fill="#FFFFFF" points="450.9,224.8 358.9,171.7 358.9,66.9 363.9,66.9 363.9,168.8 
+			450.9,219 539.1,168.1 541.6,172.4 		"/>
+		<polygon display="inline" opacity="0.3" fill="#FFFFFF" points="299.9,591 294.9,591 294.9,489.1 207.9,438.9 119.7,489.8 
+			117.2,485.5 207.9,433.2 299.9,486.2 		"/>
+		<polygon display="inline" opacity="0.3" fill="#FFFFFF" points="208,224.7 117.3,172.4 119.8,168.1 208,219 294.9,168.8 
+			294.9,66.9 299.9,66.9 299.9,171.7 		"/>
+		<polygon display="inline" opacity="0.3" fill="#FFFFFF" points="363.9,591 358.9,591 358.9,486.2 450.9,433.2 541.6,485.5 
+			539.1,489.9 450.9,438.9 363.9,489.1 		"/>
+	</g>
+	<g id="triangles_1_">
+		<path fill="#FFFFFF" d="M146.4,361.8L5,329l141.5-33.4V361.8z M26.9,328.9l114.5,26.6v-53.7L26.9,328.9z"/>
+		<path fill="#FFFFFF" d="M512.3,361.8v-66.3L653.7,329L512.3,361.8z M517.3,301.8v53.7l114.5-26.6L517.3,301.8z"/>
+		<path fill="#FFFFFF" d="M167.4,609.7l41.8-139.2l57.4,33.2L167.4,609.7z M212.2,478l-33.8,112.7l80.3-85.9L212.2,478z"/>
+		<path fill="#FFFFFF" d="M449.5,186.8l-57.4-33.2l99.7-105.8L449.5,186.8z M400.1,152.5l46.5,26.8l34.2-112.5L400.1,152.5z"/>
+		<path fill="#FFFFFF" d="M491.8,609.5l-99.7-105.8l57.4-33.2L491.8,609.5z M400.1,504.8l80.7,85.7L446.6,478L400.1,504.8z"/>
+		<path fill="#FFFFFF" d="M209.2,186.8L167.4,47.6l99.2,106.1L209.2,186.8z M178.3,66.6l33.8,112.7l46.5-26.8L178.3,66.6z"/>
+	</g>
+</g>
 </svg>
