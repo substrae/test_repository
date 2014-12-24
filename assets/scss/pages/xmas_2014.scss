@@ -7,198 +7,291 @@
 
 // Custom Imports ==============================================================
 
-	@import 'partials/palette';
-	@import 'partials/typography';
+@import 'partials/palette';
+@import 'partials/typography';
 
 // Origin Styles ===============================================================
 
-	.xmas {
-		background-color: $black;
-		height: 100vh;
-		overflow: hidden;
-		transition: background-color 0.5s ease;
-		width: 100vw;
+.xmas {
+    background-color: $black;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color .5s ease;
+    width: 100vw;
 
-		&.white {
-			background-color: $white;
-			transition: background-color 0.5s ease 7.5s;
-		}
+    &.white {
+        background-color: $white;
+        transition: background-color 1s ease 6s;
+    }
 
-		// Click Response Variability
-		.click-response {
+}
 
-			&.white {
-				background: $white;
-			}
+// Click Response Variability
+.click-response {
 
-		}
+    &.white {
+        background: $white;
+    }
 
-		// Snowflake Styles
-		.wrapper.snowflake {
-			height: 80vh;
-			position: absolute;
-				top: 50%;
-				left: 50%;
-			transform: translate(-50%,-50%);
-			width: 80vh;
-		}
+}
 
-		.flake {
-			height: 100%;
-			opacity: 0;
-			position: absolute;
-				top: 0;
-				left: 0;
-			transition: opacity 0.5s ease;
+// Snowflake Styles
+.wrapper.snowflake {
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vh;
+}
 
-			&.active {
-				-webkit-backface-visibility: hidden;
-				transform-origin: 50% 50%;
+.flake {
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .5s ease;
 
-				&.f01 {animation: flakeA 5s linear 0.5s; animation-fill-mode: forwards;}
-				&.f02 {animation: flakeB 5s linear 0.5s; animation-fill-mode: forwards;}
-				&.f03 {animation: flakeC 5s linear 0.5s; animation-fill-mode: forwards;}
-				&.f04 {animation: flakeD 5s linear 0.5s; animation-fill-mode: forwards;}
-				&.f05 {animation: flakeE 5s linear 0.5s; animation-fill-mode: forwards;}
-				&.f06 {animation: flakeF 5s linear 0.5s; animation-fill-mode: forwards;}
+    &.active {
+        backface-visibility: hidden;
+        transform-origin: 50% 50%;
 
-			}
+        &.f01 {animation: flakeA 5s linear .5s; animation-fill-mode: forwards;}
+        &.f02 {animation: flakeB 5s linear .5s; animation-fill-mode: forwards;}
+        &.f03 {animation: flakeC 5s linear .5s; animation-fill-mode: forwards;}
+        &.f04 {animation: flakeD 5s linear .5s; animation-fill-mode: forwards;}
+        &.f05 {animation: flakeE 5s linear .5s; animation-fill-mode: forwards;}
+        &.f06 {animation: flakeF 5s linear .5s; animation-fill-mode: forwards;}
 
-		}
+    }
 
-		// Content Styles
-		.content {
-			display: block;
-			opacity: 0;
-			position: absolute;
-				top: 60%;
-				left: 50%;
-			transform: translate(-50%, -50%);
-			transition: all 0.3s ease;
-			width: 60vw;
-			z-index: 20;
+}
 
-			p {
-				font-family: $roboto;
-				font-size: 2rem;
-				font-weight: 200;
+// Mobile Flakes
+.wrapper.mobile-flakes {
+    display: block;
+    height: 100vh;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
 
-				>span {
-					color: $xmas-red;
-				}
+    .mf01 {
+        animation: flake-spin 10s infinite linear;
+        height: 50vh;
+        opacity: .1;
+        position: absolute;
+        top: -20vh;
+        right: -17vh;
+    }
 
-			}
+    .mf02 {
+        animation: flake-spin-alt 10s infinite linear;
+        height: 30vh;
+        opacity: .1;
+        position: absolute;
+        left: -10vh;
+        bottom: -10vh;
+    }
 
-			&.white {
+    &.active {
+        opacity: 1;
+        transition: opacity .5s ease 10s;
+    }
 
-				p {
-					color: $white;
-				}
+}
 
-			}
+// Desktop Flakes
+.wrapper.desktop-flakes {
+    display: none;
+    height: 100vh;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
 
-			&.active {
-				opacity: 1;
-				position: absolute;
-					top: 50%;
-				transition: all 0.3s ease 0.3s;
+    .df01 {
+        animation: flake-spin 10s infinite linear;
+        height: 60vh;
+        opacity: .1;
+        position: absolute;
+        top: -20vh;
+        right: -17vh;
+    }
 
-				&.c03 {
-					transition: all 0.3s ease 8.5s;
-				}
+    .df02 {
+        animation: flake-spin-alt 10s infinite linear;
+        height: 40vh;
+        opacity: .1;
+        position: absolute;
+        left: -10vh;
+        bottom: -10vh;
+    }
 
-			}
+    &.active {
+        opacity: 1;
+        transition: opacity .5s ease 10s;
+    }
 
-		}
+}
 
-		// Button Style
-		.button-next {
-			cursor: pointer;
-			opacity: 0;
-			position: absolute;
-				right: 5vh;
-				bottom: 5vh;
-			transition: all 0.3s ease 0.3s;
-			width: 15vh;
-			z-index: 50;
+// Content Styles
+.content {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+    width: 60vw;
+    z-index: 20;
 
-			&.active {
-				opacity: 1;
-				transition: all 0.3s ease 0.3s;
-			}
+    p {
+        font-family: $roboto;
+        font-size: 2rem;
+        font-weight: 200;
 
-			&.hidden {
-				cursor: default;
-			}
+        >span {
+            color: $xmas-red;
+        }
 
-		}
+    }
 
-	}
+    &.white {
+
+        p {
+            color: $white;
+        }
+
+    }
+
+    &.active {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transition: all .3s ease .3s;
+
+        &.c03 {
+            transition: all .3s ease 8.5s;
+        }
+
+    }
+
+}
+
+// Button Style
+.button-next {
+    cursor: default;
+    opacity: 0;
+    position: absolute;
+    right: 5vh;
+    bottom: 5vh;
+    transition: all .3s ease .3s;
+    width: 15vh;
+    z-index: 50;
+
+    &.active {
+        cursor: pointer;
+        opacity: 1;
+        transition: all .3s ease .3s;
+        z-index: 60;
+    }
+
+}
 
 // Keyframes ===================================================================
 
-	@keyframes flakeA {
-		0% {opacity: 0;}
-		1% {opacity: 0;}
-		4% {opacity: 1;}
-		6% {opacity: 0;}
-		8% {opacity: 1;}
-		10% {opacity: 0;}
-		20% {opacity: 1;}
-		100% {opacity: 1;}
-	}
+@keyframes flakeA {
+    0% {opacity: 0;}
+    1% {opacity: 0;}
+    4% {opacity: 1;}
+    6% {opacity: 0;}
+    8% {opacity: 1;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    100% {opacity: 1;}
+}
 
-	@keyframes flakeB{
-		20% {opacity: 0;}
-		25% {opacity: 0;}
-		30% {opacity: 1;}
-		75% {transform: rotate(0deg);}
-		90% {transform: rotate(180deg);}
-		100% {opacity: 1; transform: rotate(180deg);}
-	}
+@keyframes flakeB{
+    20% {opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 1;}
+    // 75% {transform: rotate(0deg);}
+    // 90% {transform: rotate(180deg);}
+    100% {opacity: 1;}
+}
 
-	@keyframes flakeC {
-		30% {opacity: 0;}
-		35% {opacity: 0;}
-		40% {opacity: 1;}
-		100% {opacity: 1;}
-	}
+@keyframes flakeC {
+    30% {opacity: 0;}
+    35% {opacity: 0;}
+    40% {opacity: 1;}
+    100% {opacity: 1;}
+}
 
-	@keyframes flakeD {
-		40% {opacity: 0;}
-		45% {opacity: 0;}
-		50% {opacity: 1;}
-		85% {transform: rotate(0deg);}
-		100% {opacity: 1; transform: rotate(-180deg);}
-	}
+@keyframes flakeD {
+    40% {opacity: 0;}
+    45% {opacity: 0;}
+    50% {opacity: 1;}
+    // 85% {transform: rotate(0deg);}
+    100% {opacity: 1;}
+}
 
-	@keyframes flakeE {
-		50% {opacity: 0;}
-		55% {opacity: 0;}
-		60% {opacity: 1;}
-		100% {opacity: 1;}
-	}
+@keyframes flakeE {
+    50% {opacity: 0;}
+    55% {opacity: 0;}
+    60% {opacity: 1;}
+    100% {opacity: 1;}
+}
 
-	@keyframes flakeF {
-		60% {opacity: 0;}
-		65% {opacity: 0;}
-		70% {opacity: 1;}
-		100% {opacity: 1;}
-	}
+@keyframes flakeF {
+    60% {opacity: 0;}
+    65% {opacity: 0;}
+    70% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes flake-spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes flake-spin-alt {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
 
 // Media Queries ===============================================================
 
-	// Phone (Landscape)
-	@media screen and (min-width:541px) {}
+// Phone (Landscape)
+@media screen and (min-width:541px) {}
 
-	// Tablet (Portrait)
-	@media screen and (min-width:641px) {}
+// Tablet (Portrait)
+@media screen and (min-width:641px) {}
 
-	// Tablet (Landscape)
-	@media screen and (min-width:801px) {}
+// Tablet (Landscape)
+@media screen and (min-width:801px) {
 
-	// Desktop
-	@media screen and (min-width:1025px) {}
+    .wrapper.snowflake {
+        height: 90vw;
+        width: 90vw;
+    }
 
-	// Desktop XL
-	@media screen and (min-width:1281px) {}
+    .wrapper.mobile-flakes {
+        display: none;
+    }
+
+    .wrapper.desktop-flakes {
+        display: block;
+    }
+
+}
+
+// Desktop
+@media screen and (min-width:1025px) {}
+
+// Desktop XL
+@media screen and (min-width:1281px) {}

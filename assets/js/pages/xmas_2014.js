@@ -38,6 +38,10 @@
 	// Button Clicks
 	$('.button-next').click(function() {
 
+		function buttonHide() {
+			$('.button-next').css('display', 'none');
+		}
+
 		if($('.c01').hasClass('active')) {
 			return false;
 		}
@@ -52,6 +56,9 @@
 			$('.f06').addClass('active');
 			$('.xmas').addClass('white');
 			$('.c03').addClass('active');
+			$('.mobile-flakes').addClass('active');
+			$('.desktop-flakes').addClass('active');
+			$('.click-response').removeClass('white');
 
 			function nextDelayWhite() {
 				$('.button-next.white').removeClass('active');
@@ -101,6 +108,11 @@
 		if($('.c09').hasClass('active')) {
 			$('.c09').removeClass('active');
 			$('.c10').addClass('active');
+			if($('.xmas').hasClass('mom')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
 			return false;
 		}
 		if($('.c10').hasClass('active')) {
@@ -116,6 +128,11 @@
 		if($('.c12').hasClass('active')) {
 			$('.c12').removeClass('active');
 			$('.c13').addClass('active');
+			if($('.xmas').hasClass('mom')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
 			return false;
 		}
 		if($('.c13').hasClass('active')) {
@@ -153,6 +170,7 @@
 			$('.c20').addClass('active');
 			if($('.xmas').hasClass('dad')) {
 				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
 				return false;
 			}
 			return false;

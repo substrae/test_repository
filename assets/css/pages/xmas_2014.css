@@ -26,92 +26,171 @@ html {
   background-color: #1e1e1e;
   height: 100vh;
   overflow: hidden;
-  -webkit-transition: background-color 0.5s ease;
-          transition: background-color 0.5s ease;
+  -webkit-transition: background-color .5s ease;
+          transition: background-color .5s ease;
   width: 100vw;
 }
 /* line 22, ../../scss/pages/xmas_2014.scss */
 .xmas.white {
   background-color: white;
-  -webkit-transition: background-color 0.5s ease 7.5s;
-          transition: background-color 0.5s ease 7.5s;
+  -webkit-transition: background-color 1s ease 6s;
+          transition: background-color 1s ease 6s;
 }
-/* line 30, ../../scss/pages/xmas_2014.scss */
-.xmas .click-response.white {
+
+/* line 32, ../../scss/pages/xmas_2014.scss */
+.click-response.white {
   background: white;
 }
-/* line 37, ../../scss/pages/xmas_2014.scss */
-.xmas .wrapper.snowflake {
-  height: 80vh;
+
+/* line 39, ../../scss/pages/xmas_2014.scss */
+.wrapper.snowflake {
+  height: 90vh;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 80vh;
+  width: 90vh;
 }
-/* line 46, ../../scss/pages/xmas_2014.scss */
-.xmas .flake {
+
+/* line 48, ../../scss/pages/xmas_2014.scss */
+.flake {
   height: 100%;
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: opacity 0.5s ease;
-          transition: opacity 0.5s ease;
+  -webkit-transition: opacity .5s ease;
+          transition: opacity .5s ease;
 }
-/* line 54, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active {
+/* line 56, ../../scss/pages/xmas_2014.scss */
+.flake.active {
   -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
 }
-/* line 58, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active.f01 {
-  -webkit-animation: flakeA 5s linear 0.5s;
-          animation: flakeA 5s linear 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-/* line 59, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active.f02 {
-  -webkit-animation: flakeB 5s linear 0.5s;
-          animation: flakeB 5s linear 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
 /* line 60, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active.f03 {
-  -webkit-animation: flakeC 5s linear 0.5s;
-          animation: flakeC 5s linear 0.5s;
+.flake.active.f01 {
+  -webkit-animation: flakeA 5s linear .5s;
+          animation: flakeA 5s linear .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 /* line 61, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active.f04 {
-  -webkit-animation: flakeD 5s linear 0.5s;
-          animation: flakeD 5s linear 0.5s;
+.flake.active.f02 {
+  -webkit-animation: flakeB 5s linear .5s;
+          animation: flakeB 5s linear .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 /* line 62, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active.f05 {
-  -webkit-animation: flakeE 5s linear 0.5s;
-          animation: flakeE 5s linear 0.5s;
+.flake.active.f03 {
+  -webkit-animation: flakeC 5s linear .5s;
+          animation: flakeC 5s linear .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 /* line 63, ../../scss/pages/xmas_2014.scss */
-.xmas .flake.active.f06 {
-  -webkit-animation: flakeF 5s linear 0.5s;
-          animation: flakeF 5s linear 0.5s;
+.flake.active.f04 {
+  -webkit-animation: flakeD 5s linear .5s;
+          animation: flakeD 5s linear .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-/* line 70, ../../scss/pages/xmas_2014.scss */
-.xmas .content {
+/* line 64, ../../scss/pages/xmas_2014.scss */
+.flake.active.f05 {
+  -webkit-animation: flakeE 5s linear .5s;
+          animation: flakeE 5s linear .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+/* line 65, ../../scss/pages/xmas_2014.scss */
+.flake.active.f06 {
+  -webkit-animation: flakeF 5s linear .5s;
+          animation: flakeF 5s linear .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* line 72, ../../scss/pages/xmas_2014.scss */
+.wrapper.mobile-flakes {
+  display: block;
+  height: 100vh;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+/* line 81, ../../scss/pages/xmas_2014.scss */
+.wrapper.mobile-flakes .mf01 {
+  -webkit-animation: flake-spin 10s infinite linear;
+          animation: flake-spin 10s infinite linear;
+  height: 50vh;
+  opacity: .1;
+  position: absolute;
+  top: -20vh;
+  right: -17vh;
+}
+/* line 90, ../../scss/pages/xmas_2014.scss */
+.wrapper.mobile-flakes .mf02 {
+  -webkit-animation: flake-spin-alt 10s infinite linear;
+          animation: flake-spin-alt 10s infinite linear;
+  height: 30vh;
+  opacity: .1;
+  position: absolute;
+  left: -10vh;
+  bottom: -10vh;
+}
+/* line 99, ../../scss/pages/xmas_2014.scss */
+.wrapper.mobile-flakes.active {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease 10s;
+          transition: opacity .5s ease 10s;
+}
+
+/* line 107, ../../scss/pages/xmas_2014.scss */
+.wrapper.desktop-flakes {
+  display: none;
+  height: 100vh;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+/* line 116, ../../scss/pages/xmas_2014.scss */
+.wrapper.desktop-flakes .df01 {
+  -webkit-animation: flake-spin 10s infinite linear;
+          animation: flake-spin 10s infinite linear;
+  height: 60vh;
+  opacity: .1;
+  position: absolute;
+  top: -20vh;
+  right: -17vh;
+}
+/* line 125, ../../scss/pages/xmas_2014.scss */
+.wrapper.desktop-flakes .df02 {
+  -webkit-animation: flake-spin-alt 10s infinite linear;
+          animation: flake-spin-alt 10s infinite linear;
+  height: 40vh;
+  opacity: .1;
+  position: absolute;
+  left: -10vh;
+  bottom: -10vh;
+}
+/* line 134, ../../scss/pages/xmas_2014.scss */
+.wrapper.desktop-flakes.active {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease 10s;
+          transition: opacity .5s ease 10s;
+}
+
+/* line 142, ../../scss/pages/xmas_2014.scss */
+.content {
   display: block;
   opacity: 0;
   position: absolute;
@@ -120,395 +199,419 @@ html {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
   width: 60vw;
   z-index: 20;
 }
-/* line 81, ../../scss/pages/xmas_2014.scss */
-.xmas .content p {
+/* line 153, ../../scss/pages/xmas_2014.scss */
+.content p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 200;
 }
-/* line 86, ../../scss/pages/xmas_2014.scss */
-.xmas .content p > span {
+/* line 158, ../../scss/pages/xmas_2014.scss */
+.content p > span {
   color: #f40f31;
 }
-/* line 94, ../../scss/pages/xmas_2014.scss */
-.xmas .content.white p {
+/* line 166, ../../scss/pages/xmas_2014.scss */
+.content.white p {
   color: white;
 }
-/* line 100, ../../scss/pages/xmas_2014.scss */
-.xmas .content.active {
+/* line 172, ../../scss/pages/xmas_2014.scss */
+.content.active {
   opacity: 1;
   position: absolute;
   top: 50%;
-  -webkit-transition: all 0.3s ease 0.3s;
-          transition: all 0.3s ease 0.3s;
+  -webkit-transition: all .3s ease .3s;
+          transition: all .3s ease .3s;
 }
-/* line 106, ../../scss/pages/xmas_2014.scss */
-.xmas .content.active.c03 {
-  -webkit-transition: all 0.3s ease 8.5s;
-          transition: all 0.3s ease 8.5s;
+/* line 178, ../../scss/pages/xmas_2014.scss */
+.content.active.c03 {
+  -webkit-transition: all .3s ease 8.5s;
+          transition: all .3s ease 8.5s;
 }
-/* line 115, ../../scss/pages/xmas_2014.scss */
-.xmas .button-next {
-  cursor: pointer;
+
+/* line 187, ../../scss/pages/xmas_2014.scss */
+.button-next {
+  cursor: default;
   opacity: 0;
   position: absolute;
   right: 5vh;
   bottom: 5vh;
-  -webkit-transition: all 0.3s ease 0.3s;
-          transition: all 0.3s ease 0.3s;
+  -webkit-transition: all .3s ease .3s;
+          transition: all .3s ease .3s;
   width: 15vh;
   z-index: 50;
 }
-/* line 125, ../../scss/pages/xmas_2014.scss */
-.xmas .button-next.active {
+/* line 197, ../../scss/pages/xmas_2014.scss */
+.button-next.active {
+  cursor: pointer;
   opacity: 1;
-  -webkit-transition: all 0.3s ease 0.3s;
-          transition: all 0.3s ease 0.3s;
-}
-/* line 130, ../../scss/pages/xmas_2014.scss */
-.xmas .button-next.hidden {
-  cursor: default;
+  -webkit-transition: all .3s ease .3s;
+          transition: all .3s ease .3s;
+  z-index: 60;
 }
 
 @-webkit-keyframes flakeA {
-  /* line 141, ../../scss/pages/xmas_2014.scss */
+  /* line 209, ../../scss/pages/xmas_2014.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 142, ../../scss/pages/xmas_2014.scss */
+  /* line 210, ../../scss/pages/xmas_2014.scss */
   1% {
     opacity: 0;
   }
 
-  /* line 143, ../../scss/pages/xmas_2014.scss */
+  /* line 211, ../../scss/pages/xmas_2014.scss */
   4% {
     opacity: 1;
   }
 
-  /* line 144, ../../scss/pages/xmas_2014.scss */
+  /* line 212, ../../scss/pages/xmas_2014.scss */
   6% {
     opacity: 0;
   }
 
-  /* line 145, ../../scss/pages/xmas_2014.scss */
+  /* line 213, ../../scss/pages/xmas_2014.scss */
   8% {
     opacity: 1;
   }
 
-  /* line 146, ../../scss/pages/xmas_2014.scss */
+  /* line 214, ../../scss/pages/xmas_2014.scss */
   10% {
     opacity: 0;
   }
 
-  /* line 147, ../../scss/pages/xmas_2014.scss */
+  /* line 215, ../../scss/pages/xmas_2014.scss */
   20% {
     opacity: 1;
   }
 
-  /* line 148, ../../scss/pages/xmas_2014.scss */
+  /* line 216, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 
 @keyframes flakeA {
-  /* line 141, ../../scss/pages/xmas_2014.scss */
+  /* line 209, ../../scss/pages/xmas_2014.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 142, ../../scss/pages/xmas_2014.scss */
+  /* line 210, ../../scss/pages/xmas_2014.scss */
   1% {
     opacity: 0;
   }
 
-  /* line 143, ../../scss/pages/xmas_2014.scss */
+  /* line 211, ../../scss/pages/xmas_2014.scss */
   4% {
     opacity: 1;
   }
 
-  /* line 144, ../../scss/pages/xmas_2014.scss */
+  /* line 212, ../../scss/pages/xmas_2014.scss */
   6% {
     opacity: 0;
   }
 
-  /* line 145, ../../scss/pages/xmas_2014.scss */
+  /* line 213, ../../scss/pages/xmas_2014.scss */
   8% {
     opacity: 1;
   }
 
-  /* line 146, ../../scss/pages/xmas_2014.scss */
+  /* line 214, ../../scss/pages/xmas_2014.scss */
   10% {
     opacity: 0;
   }
 
-  /* line 147, ../../scss/pages/xmas_2014.scss */
+  /* line 215, ../../scss/pages/xmas_2014.scss */
   20% {
     opacity: 1;
   }
 
-  /* line 148, ../../scss/pages/xmas_2014.scss */
+  /* line 216, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 @-webkit-keyframes flakeB {
-  /* line 152, ../../scss/pages/xmas_2014.scss */
+  /* line 220, ../../scss/pages/xmas_2014.scss */
   20% {
     opacity: 0;
   }
 
-  /* line 153, ../../scss/pages/xmas_2014.scss */
+  /* line 221, ../../scss/pages/xmas_2014.scss */
   25% {
     opacity: 0;
   }
 
-  /* line 154, ../../scss/pages/xmas_2014.scss */
+  /* line 222, ../../scss/pages/xmas_2014.scss */
   30% {
     opacity: 1;
   }
 
-  /* line 155, ../../scss/pages/xmas_2014.scss */
-  75% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  /* line 156, ../../scss/pages/xmas_2014.scss */
-  90% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-
-  /* line 157, ../../scss/pages/xmas_2014.scss */
+  /* line 225, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
   }
 }
 @keyframes flakeB {
-  /* line 152, ../../scss/pages/xmas_2014.scss */
+  /* line 220, ../../scss/pages/xmas_2014.scss */
   20% {
     opacity: 0;
   }
 
-  /* line 153, ../../scss/pages/xmas_2014.scss */
+  /* line 221, ../../scss/pages/xmas_2014.scss */
   25% {
     opacity: 0;
   }
 
-  /* line 154, ../../scss/pages/xmas_2014.scss */
+  /* line 222, ../../scss/pages/xmas_2014.scss */
   30% {
     opacity: 1;
   }
 
-  /* line 155, ../../scss/pages/xmas_2014.scss */
-  75% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  /* line 156, ../../scss/pages/xmas_2014.scss */
-  90% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-
-  /* line 157, ../../scss/pages/xmas_2014.scss */
+  /* line 225, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
   }
 }
 @-webkit-keyframes flakeC {
-  /* line 161, ../../scss/pages/xmas_2014.scss */
+  /* line 229, ../../scss/pages/xmas_2014.scss */
   30% {
     opacity: 0;
   }
 
-  /* line 162, ../../scss/pages/xmas_2014.scss */
+  /* line 230, ../../scss/pages/xmas_2014.scss */
   35% {
     opacity: 0;
   }
 
-  /* line 163, ../../scss/pages/xmas_2014.scss */
+  /* line 231, ../../scss/pages/xmas_2014.scss */
   40% {
     opacity: 1;
   }
 
-  /* line 164, ../../scss/pages/xmas_2014.scss */
+  /* line 232, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 @keyframes flakeC {
-  /* line 161, ../../scss/pages/xmas_2014.scss */
+  /* line 229, ../../scss/pages/xmas_2014.scss */
   30% {
     opacity: 0;
   }
 
-  /* line 162, ../../scss/pages/xmas_2014.scss */
+  /* line 230, ../../scss/pages/xmas_2014.scss */
   35% {
     opacity: 0;
   }
 
-  /* line 163, ../../scss/pages/xmas_2014.scss */
+  /* line 231, ../../scss/pages/xmas_2014.scss */
   40% {
     opacity: 1;
   }
 
-  /* line 164, ../../scss/pages/xmas_2014.scss */
+  /* line 232, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 @-webkit-keyframes flakeD {
-  /* line 168, ../../scss/pages/xmas_2014.scss */
+  /* line 236, ../../scss/pages/xmas_2014.scss */
   40% {
     opacity: 0;
   }
 
-  /* line 169, ../../scss/pages/xmas_2014.scss */
+  /* line 237, ../../scss/pages/xmas_2014.scss */
   45% {
     opacity: 0;
   }
 
-  /* line 170, ../../scss/pages/xmas_2014.scss */
+  /* line 238, ../../scss/pages/xmas_2014.scss */
   50% {
     opacity: 1;
   }
 
-  /* line 171, ../../scss/pages/xmas_2014.scss */
-  85% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  /* line 172, ../../scss/pages/xmas_2014.scss */
+  /* line 240, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
   }
 }
 @keyframes flakeD {
-  /* line 168, ../../scss/pages/xmas_2014.scss */
+  /* line 236, ../../scss/pages/xmas_2014.scss */
   40% {
     opacity: 0;
   }
 
-  /* line 169, ../../scss/pages/xmas_2014.scss */
+  /* line 237, ../../scss/pages/xmas_2014.scss */
   45% {
     opacity: 0;
   }
 
-  /* line 170, ../../scss/pages/xmas_2014.scss */
+  /* line 238, ../../scss/pages/xmas_2014.scss */
   50% {
     opacity: 1;
   }
 
-  /* line 171, ../../scss/pages/xmas_2014.scss */
-  85% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  /* line 172, ../../scss/pages/xmas_2014.scss */
+  /* line 240, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
   }
 }
 @-webkit-keyframes flakeE {
-  /* line 176, ../../scss/pages/xmas_2014.scss */
+  /* line 244, ../../scss/pages/xmas_2014.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 177, ../../scss/pages/xmas_2014.scss */
+  /* line 245, ../../scss/pages/xmas_2014.scss */
   55% {
     opacity: 0;
   }
 
-  /* line 178, ../../scss/pages/xmas_2014.scss */
+  /* line 246, ../../scss/pages/xmas_2014.scss */
   60% {
     opacity: 1;
   }
 
-  /* line 179, ../../scss/pages/xmas_2014.scss */
+  /* line 247, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 @keyframes flakeE {
-  /* line 176, ../../scss/pages/xmas_2014.scss */
+  /* line 244, ../../scss/pages/xmas_2014.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 177, ../../scss/pages/xmas_2014.scss */
+  /* line 245, ../../scss/pages/xmas_2014.scss */
   55% {
     opacity: 0;
   }
 
-  /* line 178, ../../scss/pages/xmas_2014.scss */
+  /* line 246, ../../scss/pages/xmas_2014.scss */
   60% {
     opacity: 1;
   }
 
-  /* line 179, ../../scss/pages/xmas_2014.scss */
+  /* line 247, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 @-webkit-keyframes flakeF {
-  /* line 183, ../../scss/pages/xmas_2014.scss */
+  /* line 251, ../../scss/pages/xmas_2014.scss */
   60% {
     opacity: 0;
   }
 
-  /* line 184, ../../scss/pages/xmas_2014.scss */
+  /* line 252, ../../scss/pages/xmas_2014.scss */
   65% {
     opacity: 0;
   }
 
-  /* line 185, ../../scss/pages/xmas_2014.scss */
+  /* line 253, ../../scss/pages/xmas_2014.scss */
   70% {
     opacity: 1;
   }
 
-  /* line 186, ../../scss/pages/xmas_2014.scss */
+  /* line 254, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
   }
 }
 @keyframes flakeF {
-  /* line 183, ../../scss/pages/xmas_2014.scss */
+  /* line 251, ../../scss/pages/xmas_2014.scss */
   60% {
     opacity: 0;
   }
 
-  /* line 184, ../../scss/pages/xmas_2014.scss */
+  /* line 252, ../../scss/pages/xmas_2014.scss */
   65% {
     opacity: 0;
   }
 
-  /* line 185, ../../scss/pages/xmas_2014.scss */
+  /* line 253, ../../scss/pages/xmas_2014.scss */
   70% {
     opacity: 1;
   }
 
-  /* line 186, ../../scss/pages/xmas_2014.scss */
+  /* line 254, ../../scss/pages/xmas_2014.scss */
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes flake-spin {
+  /* line 258, ../../scss/pages/xmas_2014.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  /* line 259, ../../scss/pages/xmas_2014.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes flake-spin {
+  /* line 258, ../../scss/pages/xmas_2014.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  /* line 259, ../../scss/pages/xmas_2014.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes flake-spin-alt {
+  /* line 263, ../../scss/pages/xmas_2014.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  /* line 264, ../../scss/pages/xmas_2014.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes flake-spin-alt {
+  /* line 263, ../../scss/pages/xmas_2014.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  /* line 264, ../../scss/pages/xmas_2014.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@media screen and (min-width: 801px) {
+  /* line 278, ../../scss/pages/xmas_2014.scss */
+  .wrapper.snowflake {
+    height: 90vw;
+    width: 90vw;
+  }
+
+  /* line 283, ../../scss/pages/xmas_2014.scss */
+  .wrapper.mobile-flakes {
+    display: none;
+  }
+
+  /* line 287, ../../scss/pages/xmas_2014.scss */
+  .wrapper.desktop-flakes {
+    display: block;
   }
 }

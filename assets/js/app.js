@@ -11,7 +11,7 @@ $(document).foundation();
 
 // Touch Response ==============================================================
 
-	$('.click').on("touchStart click", function(event) {
+	$('.click').click(function() {
 
 		var clickDimension = $('.click-response').outerHeight() / 2;
 		var topOffset = $(this).offset().top;

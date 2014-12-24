@@ -3887,7 +3887,7 @@ label {
   display: block;
   font-weight: normal;
   line-height: 1.5;
-  margin-bottom: 0
+  margin-bottom: 0;
   /* Styles for required inputs */
 }
 /* line 387, ../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -7930,7 +7930,7 @@ blockquote p {
 
   /* line 498, ../bower_components/foundation/scss/foundation/components/_type.scss */
   thead {
-    display: table-header-group
+    display: table-header-group;
     /* h5bp.com/t */
   }
 
