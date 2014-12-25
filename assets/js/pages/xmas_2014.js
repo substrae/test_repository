@@ -98,17 +98,42 @@
 		if($('.c07').hasClass('active')) {
 			$('.c07').removeClass('active');
 			$('.c08').addClass('active');
+			if($('.xmas').hasClass('erin')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
+			if($('.xmas').hasClass('stephen')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
 			return false;
 		}
 		if($('.c08').hasClass('active')) {
 			$('.c08').removeClass('active');
 			$('.c09').addClass('active');
+			if($('.xmas').hasClass('leah')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
+			if($('.xmas').hasClass('jorrie')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
 			return false;
 		}
 		if($('.c09').hasClass('active')) {
 			$('.c09').removeClass('active');
 			$('.c10').addClass('active');
-			if($('.xmas').hasClass('mom')) {
+			if($('.xmas').hasClass('julia')) {
+				$('.button-next').removeClass('active');
+				setTimeout(buttonHide, 1000);
+				return false;
+			}
+			if($('.xmas').hasClass('justin')) {
 				$('.button-next').removeClass('active');
 				setTimeout(buttonHide, 1000);
 				return false;

@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    autoprefixer-rails (4.0.2.1)
+    autoprefixer-rails (4.0.2.2)
       execjs
     chunky_png (1.3.3)
     compass (1.0.1)
